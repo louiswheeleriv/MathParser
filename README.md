@@ -1,12 +1,13 @@
-MathParser
+#MathParser
 
 A simple ruby tool which parses a math expression
 down to either a number or operation tree.
 
-Usage:
+###Usage:
 
-cd path/to/MathParser
-ruby src/MathParser.rb
+`cd path/to/MathParser`
+
+`ruby src/MathParser.rb`
 
 Enter math expressions to see the result.  Number
 operations will be evaluated down to a numeric result.
