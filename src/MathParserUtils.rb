@@ -5,6 +5,16 @@
 # Extension of Array with custom functions
 class Array
     def clean
+        arr = self.dup
+        for i in (0..arr.length)
+            if arr[i] == nil || (arr[i] =~ /^\s*$/) == 0
+                arr.delete_at(i)
+                i -= 1
+            end
+        end
+        return arr
+    end
+    def clean!
         for i in (0..self.length)
             if self[i] == nil || (self[i] =~ /^\s*$/) == 0
                 self.delete_at(i)
